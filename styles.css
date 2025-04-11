@@ -1,0 +1,450 @@
+/* Import a fun and modern font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Fredoka', sans-serif; /* Updated font */
+    margin: 0;
+    padding: 0;
+    background-color: #F5EE65;
+    color: #8E1A1C;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FAA43B;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F5EE65;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem; /* Increased padding for better spacing */
+    background-color: #a51212; /* Adjusted background color for better contrast */
+    color: #FFFFFF;
+    border-bottom: 5px solid #FAA43B;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Increased font size for emphasis */
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Increased font size for better readability */
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem; /* Increased padding for a bolder button */
+    background-color: #8E1A1C;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #FAA43B;
+    transform: scale(1.1); /* Slightly larger scale for hover effect */
+}
+
+.hero-logo {
+    text-align: center;
+    margin-bottom: 2rem; /* Increased margin for better spacing */
+}
+
+.hero-logo img {
+    width: 200px; /* Increased size for better visibility */
+    height: auto;
+    display: inline-block;
+    border-radius: 0; /* Ensure no border radius for a clean logo look */
+    background-color: transparent; /* Ensure transparent background */
+    box-shadow: none; /* Remove shadow for a cleaner look */
+}
+
+.menu, .contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.menu-item {
+    margin: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+form label, form input, form textarea, form button {
+    margin: 0.5rem 0;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 0.8rem;
+    border: 2px solid #FAA43B;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #FAA43B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #8E1A1C;
+    transform: scale(1.05);
+}
+
+.featured-menu, .offers, .about, .gallery {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.featured-menu {
+    background-color: #FFF5E1;
+    border-top: 2px solid #FAA43B;
+    border-bottom: 2px solid #FAA43B;
+}
+
+.featured-menu .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-menu .menu-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.featured-menu .menu-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.featured-menu .menu-item h3 {
+    margin: 0.5rem 0;
+    color: #8E1A1C;
+    font-size: 1.5rem;
+}
+
+.featured-menu .menu-item p {
+    margin: 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.featured-menu .menu-item, .gallery-images img {
+    margin: 1rem 0;
+}
+
+.offers {
+    background-color: #F05626;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.offers h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about {
+    background-color: #FFF5E1;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    padding: 3rem 2rem;
+    background-color: #FFF5E1; /* Light background for contrast */
+    border-top: 2px solid #FAA43B;
+    border-bottom: 2px solid #FAA43B;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: #8E1A1C;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px; /* Softer corners */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.hidden-gallery {
+    display: none; /* Initially hide additional images */
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center; /* Ensure images are centered */
+}
+
+.hidden-gallery img {
+    width: auto; /* Allow natural width */
+    max-width: 200px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hidden-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.view-more-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background-color: #FAA43B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-more-button:hover {
+    background-color: #8E1A1C;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #FAA43B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    border-top: 5px solid #F05626;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer .social-links li {
+    display: inline;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #F5EE65;
+}
+
+.highlight {
+    color: #F05626;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #FFF5E1;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #F5EE65;
+}
+
+.signup {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #FFF5E1;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup h1 {
+    font-size: 2rem;
+    color: #8E1A1C;
+    margin-bottom: 1.5rem;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.signup form label {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.signup form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #FAA43B;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #FAA43B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup form button:hover {
+    background-color: #8E1A1C;
+    transform: scale(1.05);
+}
