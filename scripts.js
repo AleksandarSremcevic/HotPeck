@@ -43,4 +43,53 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.style.display = "none";
         }
     });
+
+    const closeButtons = document.querySelectorAll(".close");
+
+    // Close modal or overlay on 'X' click
+    closeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const modal = button.closest(".modal");
+            if (modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
+
+    // Ensure all modals close on outside click
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+        modal.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
+
+    // Example: Update loyalty rewards progress dynamically
+    const progressBar = document.querySelector(".progress");
+    const points = 120; // Example points
+    const maxPoints = 200; // Example max points for next reward
+    const progressPercentage = (points / maxPoints) * 100;
+
+    if (progressBar) {
+        progressBar.style.width = `${progressPercentage}%`;
+    }
+
+    const burgerMenu = document.querySelector(".burger-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    // Toggle burger menu
+    burgerMenu.addEventListener("click", () => {
+        burgerMenu.classList.toggle("active");
+        navLinks.classList.toggle("mobile");
+    });
+
+    // Close menu when a link is clicked
+    navLinks.addEventListener("click", (event) => {
+        if (event.target.tagName === "A") {
+            burgerMenu.classList.remove("active");
+            navLinks.classList.remove("mobile");
+        }
+    });
 });

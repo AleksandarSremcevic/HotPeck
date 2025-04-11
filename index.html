@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Peck - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header class="sticky-header">
         <nav>
             <div class="logo">
                 <img src="images/1Asset 3.png" alt="Hot Peck Logo">
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="account.html"><i class="fas fa-user"></i> Account</a></li>
             </ul>
         </nav>
     </header>
@@ -26,30 +33,57 @@
                 <img src="images/Asset 2.png" alt="Hot Peck Secondary Logo">
             </div>
             <h1>Welcome to Hot Peck</h1>
-            <p>Where flavor meets fire! Explore our delicious menu today.</p>
-            <a href="menu.html" class="cta-button">View Menu</a>
+            <p><i class="fas fa-fire"></i> Where flavor meets fire! Explore our delicious menu today.</p>
+            <a href="menu.html" class="cta-button"><i class="fas fa-hamburger"></i> View Menu</a>
+        </section>
+
+        <!-- Spice Level Challenges Section -->
+        <section class="spice-challenges">
+            <h2><i class="fas fa-pepper-hot"></i> Spice Level Challenges</h2>
+            <p>Think you can handle the heat? Take on our spice level challenges and earn rewards!</p>
+            <div class="challenge-levels">
+                <div class="challenge">
+                    <h3><i class="fas fa-leaf"></i> Mild</h3>
+                    <p>Perfect for beginners.</p>
+                </div>
+                <div class="challenge">
+                    <h3><i class="fas fa-fire"></i> Hot</h3>
+                    <p>For those who like it spicy.</p>
+                </div>
+                <div class="challenge">
+                    <h3><i class="fas fa-skull-crossbones"></i> Inferno</h3>
+                    <p>Only for the brave!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Easy Ordering Section -->
+        <section class="easy-ordering">
+            <h2><i class="fas fa-shopping-cart"></i> Easy Ordering</h2>
+            <p>Order your favorite meals in just a few clicks. Fast, simple, and convenient!</p>
+            <a href="menu.html" class="cta-button"><i class="fas fa-arrow-right"></i> Order Now</a>
+        </section>
+
+        <!-- Loyalty Rewards Section -->
+        <section class="loyalty-rewards">
+            <h2><i class="fas fa-gift"></i> Loyalty Rewards</h2>
+            <p>Earn points every time you order and redeem them for exclusive rewards!</p>
+            <a href="signup.html" class="cta-button"><i class="fas fa-user-plus"></i> Join Now</a>
         </section>
 
         <!-- Featured Menu/On Sale Section -->
         <section class="featured-menu">
             <h2>Featured Menu</h2>
             <div class="menu-item">
-                <img src="images/spicy-chicken-burger.jpg" alt="Spicy Chicken Burger">
+                <img src="images/image.png" alt="Spicy Chicken Burger">
                 <h3>Spicy Chicken Burger</h3>
                 <p><span class="highlight">Now only $5.99!</span> A fiery twist on a classic favorite.</p>
             </div>
             <div class="menu-item">
-                <img src="images/hot-wings.jpg" alt="Hot Wings">
+                <img src="images/hotwings.png" alt="Hot Wings">
                 <h3>Hot Wings</h3>
                 <p><span class="highlight">Get 10 wings for the price of 8!</span> Perfectly crispy and packed with heat.</p>
             </div>
-        </section>
-
-        <!-- Offers Section -->
-        <section class="offers">
-            <h2>Special Offers</h2>
-            <p>Sign up for our newsletter and get 10% off your first order!</p>
-            <a href="signup.html" class="cta-button">Sign Up</a>
         </section>
 
         <!-- About Section -->
@@ -85,9 +119,9 @@
     <footer>
         <p>&copy; 2023 Hot Peck. All rights reserved.</p>
         <ul class="social-links">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
         </ul>
     </footer>
     <script src="scripts.js"></script>
