@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Peck - Account</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const burgerMenu = document.querySelector(".burger-menu");
+            const navLinks = document.querySelector(".nav-links");
+
+            burgerMenu.addEventListener("click", function() {
+                navLinks.classList.toggle("mobile");
+                burgerMenu.classList.toggle("active");
+            });
+
+            navLinks.addEventListener("click", function(event) {
+                if (event.target.tagName === "A") {
+                    navLinks.classList.remove("mobile");
+                    burgerMenu.classList.remove("active");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -25,6 +43,16 @@
             </ul>
         </nav>
     </header>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
     <main>
         <section class="account">
             <h1>Welcome, [Username]</h1>

@@ -5,37 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Peck - Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const burgerMenu = document.querySelector(".burger-menu");
+            const navLinks = document.querySelector(".nav-links");
+
+            burgerMenu.addEventListener("click", function() {
+                navLinks.classList.toggle("mobile");
+                burgerMenu.classList.toggle("active");
+            });
+
+            navLinks.addEventListener("click", function(event) {
+                if (event.target.tagName === "A") {
+                    navLinks.classList.remove("mobile");
+                    burgerMenu.classList.remove("active");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="images/logo.png" alt="Hot Peck Logo">
+                <img src="images/1Asset 3.png" alt="Hot Peck Logo">
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="account.html"><i class="fas fa-user"></i> Account</a></li> <!-- Added account icon -->
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="account.html"><i class="fas fa-user"></i> Account</a></li>
             </ul>
         </nav>
     </header>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
     <main>
         <section class="menu">
-            <h1>Our Menu</h1>
-            <div class="menu-item">
-                <h2>Spicy Chicken Burger</h2>
-                <p>A fiery twist on a classic favorite.</p>
-            </div>
-            <div class="menu-item">
-                <h2>Hot Wings</h2>
-                <p>Perfectly crispy and packed with heat.</p>
-            </div>
-            <div class="menu-item">
-                <h2>Loaded Fries</h2>
-                <p>Cheesy, spicy, and absolutely delicious.</p>
+            <h1>Our Delicious Menu</h1>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/spicy-chicken-burger.jpg" alt="Spicy Chicken Burger">
+                    <h2>Spicy Chicken Burger</h2>
+                    <p>A fiery twist on a classic favorite.</p>
+                    <span class="price">$5.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/hot-wings.jpg" alt="Hot Wings">
+                    <h2>Hot Wings</h2>
+                    <p>Perfectly crispy and packed with heat.</p>
+                    <span class="price">$8.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/loaded-fries.jpg" alt="Loaded Fries">
+                    <h2>Loaded Fries</h2>
+                    <p>Cheesy, spicy, and absolutely delicious.</p>
+                    <span class="price">$4.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/grilled-chicken.jpg" alt="Grilled Chicken">
+                    <h2>Grilled Chicken</h2>
+                    <p>Juicy and tender, grilled to perfection.</p>
+                    <span class="price">$10.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/chicken-wrap.jpg" alt="Chicken Wrap">
+                    <h2>Chicken Wrap</h2>
+                    <p>A healthy and flavorful option.</p>
+                    <span class="price">$6.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/chicken-salad.jpg" alt="Chicken Salad">
+                    <h2>Chicken Salad</h2>
+                    <p>Fresh greens topped with grilled chicken.</p>
+                    <span class="price">$7.99</span>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2023 Hot Peck. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

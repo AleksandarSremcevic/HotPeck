@@ -227,15 +227,39 @@ form button:hover {
 .about {
     background-color: #FFF5E1;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 3rem 2rem;
     margin: 2rem auto;
     max-width: 800px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .about h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #8E1A1C;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.about img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .gallery {
@@ -681,7 +705,7 @@ footer .social-links a:hover {
 }
 
 .nav-links.mobile {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -726,4 +750,91 @@ footer .social-links a:hover {
     .burger-menu {
         display: flex;
     }
+}
+
+/* Flame Animation */
+@keyframes flame {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.flame {
+    position: fixed;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #FF4500, #FF6347, transparent);
+    border-radius: 50%;
+    animation: flame 2s infinite ease-in-out;
+    pointer-events: none;
+}
+
+.flame:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.flame:nth-child(2) {
+    top: 30%;
+    left: 50%;
+    animation-delay: 0.5s;
+}
+
+.flame:nth-child(3) {
+    top: 70%;
+    left: 80%;
+    animation-delay: 1s;
+}
+
+.flame:nth-child(4) {
+    top: 50%;
+    left: 10%;
+    animation-delay: 1.5s;
+}
+
+.flame:nth-child(5) {
+    top: 80%;
+    left: 40%;
+    animation-delay: 2s;
+}
+
+.flame:nth-child(6) {
+    top: 15%;
+    left: 70%;
+    animation-delay: 0.3s;
+}
+
+.flame:nth-child(7) {
+    top: 40%;
+    left: 30%;
+    animation-delay: 0.8s;
+}
+
+.flame:nth-child(8) {
+    top: 60%;
+    left: 60%;
+    animation-delay: 1.2s;
+}
+
+.flame:nth-child(9) {
+    top: 85%;
+    left: 20%;
+    animation-delay: 1.7s;
+}
+
+.flame:nth-child(10) {
+    top: 25%;
+    left: 90%;
+    animation-delay: 2.3s;
 }

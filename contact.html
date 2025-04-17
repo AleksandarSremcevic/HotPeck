@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Peck - Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const burgerMenu = document.querySelector(".burger-menu");
+            const navLinks = document.querySelector(".nav-links");
+
+            burgerMenu.addEventListener("click", function() {
+                navLinks.classList.toggle("mobile");
+                burgerMenu.classList.toggle("active");
+            });
+
+            navLinks.addEventListener("click", function(event) {
+                if (event.target.tagName === "A") {
+                    navLinks.classList.remove("mobile");
+                    burgerMenu.classList.remove("active");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="images/logo.png" alt="Hot Peck Logo">
+                <img src="images/1Asset 3.png" alt="Hot Peck Logo">
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="account.html"><i class="fas fa-user"></i> Account</a></li>
             </ul>
         </nav>
     </header>
@@ -33,5 +57,15 @@
             </form>
         </section>
     </main>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
 </body>
 </html>
